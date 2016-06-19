@@ -1,4 +1,4 @@
-package test.model;
+package liuyan.model;
 
 public class User {
     private Integer id;

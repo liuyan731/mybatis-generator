@@ -1,11 +1,9 @@
-package test.model;
+package liuyan.model;
 
-public class Product {
+public class City {
     private Integer id;
 
     private String name;
-
-    private String price;
 
     public Integer getId() {
         return id;
@@ -21,13 +19,5 @@ public class Product {
 
     public void setName(String name) {
         this.name = name == null ? null : name.trim();
-    }
-
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price == null ? null : price.trim();
     }
 }

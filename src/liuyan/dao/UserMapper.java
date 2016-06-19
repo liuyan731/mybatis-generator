@@ -1,6 +1,6 @@
-package test.dao;
+package liuyan.dao;
 
-import test.model.User;
+import liuyan.model.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer id);

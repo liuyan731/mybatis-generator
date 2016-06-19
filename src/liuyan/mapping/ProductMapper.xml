@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="test.dao.ProductMapper" >
-  <resultMap id="BaseResultMap" type="test.model.Product" >
+<mapper namespace="liuyan.dao.ProductMapper" >
+  <resultMap id="BaseResultMap" type="liuyan.model.Product" >
     <id column="id" property="id" jdbcType="INTEGER" />
     <result column="name" property="name" jdbcType="VARCHAR" />
     <result column="price" property="price" jdbcType="VARCHAR" />
@@ -19,13 +19,13 @@
     delete from product_t
     where id = #{id,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="test.model.Product" >
+  <insert id="insert" parameterType="liuyan.model.Product" >
     insert into product_t (id, name, price
       )
     values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{price,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="test.model.Product" >
+  <insert id="insertSelective" parameterType="liuyan.model.Product" >
     insert into product_t
     <trim prefix="(" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -50,7 +50,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="test.model.Product" >
+  <update id="updateByPrimaryKeySelective" parameterType="liuyan.model.Product" >
     update product_t
     <set >
       <if test="name != null" >
@@ -62,7 +62,7 @@
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="test.model.Product" >
+  <update id="updateByPrimaryKey" parameterType="liuyan.model.Product" >
     update product_t
     set name = #{name,jdbcType=VARCHAR},
       price = #{price,jdbcType=VARCHAR}

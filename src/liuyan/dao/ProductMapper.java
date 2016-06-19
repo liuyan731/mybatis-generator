@@ -1,6 +1,6 @@
-package test.dao;
+package liuyan.dao;
 
-import test.model.Product;
+import liuyan.model.Product;
 
 public interface ProductMapper {
     int deleteByPrimaryKey(Integer id);

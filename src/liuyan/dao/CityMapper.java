@@ -1,6 +1,6 @@
-package test.dao;
+package liuyan.dao;
 
-import test.model.City;
+import liuyan.model.City;
 
 public interface CityMapper {
     int deleteByPrimaryKey(Integer id);
